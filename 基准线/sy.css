@@ -1,0 +1,11 @@
+table{
+    display: inline-block;
+    width: 20%;
+}
+table td{
+    width: 140px;
+    height: 26px;
+}
+.ST{
+    background-color: rgb(124, 67, 67);
+}

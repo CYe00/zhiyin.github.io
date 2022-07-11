@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>种植阶段</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+
+<body id="body-pd">
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav_brand">
+                    <!-- <ion-icon name="menu-outline" class="nav_toggle" id="nav_toggle"></ion-icon> -->
+                    <div class="logo"><img src="img/logo.jpg" alt="智引农机" class="nav_toggle" id="nav-toggle"></div>
+                    <a href="#" class="nav_logo">智引农机</a>
+                </div>
+                <div class="nav_list">
+                    <a href="#" class="nav_link">
+                        <ion-icon name="home-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">主页</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <ion-icon name="eye-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">实时状态</span>
+                    </a>
+                    <div class="nav_link collapse">
+                        <ion-icon name="location-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">基本线</span>
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+                        <ul class="collapse_menu">
+                            <a href="#" class="collapse__sublink">a1</a>
+                            <a href="#" class="collapse__sublink">a2</a>
+                            <a href="#" class="collapse__sublink">a3</a>
+                        </ul>
+                    </div>
+                    <div class="nav_link collapse">
+                        <ion-icon name="layers-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">作业数据</span>
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+                        <ul class="collapse_menu">
+                            <a href="#" class="collapse__sublink">test1</a>
+                            <a href="#" class="collapse__sublink">test2</a>
+                            <a href="#" class="collapse__sublink">test3</a>
+                        </ul>
+                    </div>
+                    <a href="#" class="nav_link">
+                        <ion-icon name="pie-chart-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">统计</span>
+                    </a>
+                    <a href="#" class="nav_link active">
+                        <ion-icon name="settings-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">设置</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="nav_link">
+                <ion-icon name="log-out-outline" class="nav_icon"></ion-icon>
+                <span class="nav_name">退出登陆</span>
+            </a>
+        </nav>
+    </div>
+
+    <div>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+       
+        <dropdown style="margin:0px 20px;font-size: 30px;">
+            <input id="toggle1" type="checkbox" checked>
+            <label for="toggle1" class="animate"
+                style="border-left: 0px;background: none;padding: 0px 20px 0px 0px;">耕地<i
+                    class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+
+        <dropdown style="margin:0px 20px;font-size: 30px;">
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate"
+                style="border-left: 0px;background: none;padding: 0px 35px 0px 0px;margin: 0px;">播种<i
+                    class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown style="margin:0px 20px;font-size: 30px;">
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate"
+                style="border-left: 0px;background: none;padding: 0px 35px 0px 0px;margin: 0px;">管理<i
+                    class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown style="margin:0px 20px;font-size: 30px;">
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate"
+                style="border-left: 0px;background: none;padding: 0px 35px 0px 0px;margin: 0px;">收获<i
+                    class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <br>
+
+        <dropdown>
+            <input id="toggle1" type="checkbox" checked>
+            <label for="toggle1" class="animate">翻耕<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">旋耕播种 <i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">基本苗处理<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">入库<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <br>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">播种<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">播种<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">播种<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">播种<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <br>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">组合耙耙地<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">开横沟<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">苗肥<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">收割<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <br>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">施基地<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate" style="text-align: center;border-left: none;">+<i
+                    class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">平衡肥<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <dropdown>
+            <input id="toggle2" type="checkbox">
+            <label for="toggle2" class="animate">晒场<i class="fa fa-bars float-right"></i></label>
+            <!-- <ul class="animate">
+                <li class="animate">Code<i class="fa fa-code float-right"></i></li>
+                <li class="animate">Zoom<i class="fa fa-arrows-alt float-right"></i></li>
+                <li class="animate">Settings<i class="fa fa-cog float-right"></i></li>
+            </ul> -->
+        </dropdown>
+        <!-- <div style="text-align:center;clear:both">
+            <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+            <script src="/follow.js" type="text/javascript"></script>
+        </div> -->
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

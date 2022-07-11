@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>统计</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body id="body-pd">
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav_brand">
+                    <!-- <ion-icon name="menu-outline" class="nav_toggle" id="nav_toggle"></ion-icon> -->
+                    <div class="logo"><img src="img/logo.jpg" alt="智引农机" class="nav_toggle" id="nav-toggle"></div>
+                    <a href="#" class="nav_logo">智引农机</a>
+                </div>
+                <div class="nav_list">
+                    <a href="#" class="nav_link">
+                        <ion-icon name="home-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">主页</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <ion-icon name="eye-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">实时状态</span>
+                    </a>
+                    <div class="nav_link collapse">
+                        <ion-icon name="location-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">基本线</span>
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+                        <ul class="collapse_menu">
+                            <a href="#" class="collapse__sublink">a1</a>
+                            <a href="#" class="collapse__sublink">a2</a>
+                            <a href="#" class="collapse__sublink">a3</a>
+                        </ul>
+                    </div>
+                    <div class="nav_link collapse">
+                        <ion-icon name="layers-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name"><a href="../作业数据/zuoye.html" style="color: white;">作业数据</a></span>
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+                        <ul class="collapse_menu">
+                            <a href="#" class="collapse__sublink">test1</a>
+                            <a href="#" class="collapse__sublink">test2</a>
+                            <a href="#" class="collapse__sublink">test3</a>
+                        </ul>
+                    </div>
+                    <a href="#" class="nav_link active">
+                        <ion-icon name="pie-chart-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">统计</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <ion-icon name="settings-outline" class="nav_icon"></ion-icon>
+                        <span class="nav_name">设置</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="nav_link">
+                <ion-icon name="log-out-outline" class="nav_icon"></ion-icon>
+                <span class="nav_name">退出登陆</span>
+            </a>
+        </nav>
+    </div>
+    <!-- 进行数据分析 -->
+    <div>
+        <div style="text-align:center;clear:both;">
+            <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+            <script src="/follow.js" type="text/javascript"></script>
+        </div>
+        <div class="charts-container cf">
+            <div class="chart" id="graph-1-container">
+                <h2 class="title">工作状态</h2>
+                <div class="chart-svg">
+                    <svg class="chart-line" id="chart-1" viewBox="0 0 80 40">
+                        <defs>
+                            <clipPath id="clip" x="0" y="0" width="80" height="40">
+                                <rect id="clip-rect" x="-80" y="0" width="77" height="38.7" />
+                            </clipPath>
+
+                            <linearGradient id="gradient-1">
+                                <stop offset="0" stop-color="#00d5bd" />
+                                <stop offset="100" stop-color="#24c1ed" />
+                            </linearGradient>
+
+                            <linearGradient id="gradient-2">
+                                <stop offset="0" stop-color="#954ce9" />
+                                <stop offset="0.3" stop-color="#954ce9" />
+                                <stop offset="0.6" stop-color="#24c1ed" />
+                                <stop offset="1" stop-color="#24c1ed" />
+                            </linearGradient>
+
+                            <linearGradient id="gradient-3" x1="0%" y1="0%" x2="0%" y2="100%">>
+                                <stop offset="0" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0.07" />
+                                <stop offset="0.5" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0.13" />
+                                <stop offset="1" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0" />
+                            </linearGradient>
+
+                            <linearGradient id="gradient-4" x1="0%" y1="0%" x2="0%" y2="100%">>
+                                <stop offset="0" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0.07" />
+                                <stop offset="0.5" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0.13" />
+                                <stop offset="1" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0" />
+                            </linearGradient>
+
+                        </defs>
+                    </svg>
+                    <h3 class="valueX">time</h3>
+                </div>
+                <div class="chart-values">
+                    <p class="h-value">1689h</p>
+                    <p class="percentage-value"></p>
+                    <p class="total-gain"></p>
+                </div>
+                <div class="triangle green"></div>
+            </div>
+            <div class="chart" id="graph-2-container">
+                <h2 class="title">作业效率</h2>
+                <div class="chart-svg">
+                    <svg class="chart-line" id="chart-2" viewBox="0 0 80 40">
+                    </svg>
+                    <h3 class="valueX">time</h3>
+                </div>
+                <div class="chart-values">
+                    <p class="h-value">322h</p>
+                    <p class="percentage-value"></p>
+                    <p class="total-gain"></p>
+                </div>
+                <div class="triangle red"></div>
+            </div>
+            <div class="chart circle" id="circle-1">
+                <h2 class="title">油耗</h2>
+                <div class="chart-svg align-center">
+                    <h2 class="circle-percentage"></h2>
+                    <svg class="chart-circle" id="chart-3" width="50%" viewBox="0 0 100 100">
+                        <path class="underlay" d="M5,50 A45,45,0 1 1 95,50 A45,45,0 1 1 5,50" />
+                    </svg>
+                </div>
+                <div class="triangle green"></div>
+            </div>
+            <div class="chart circle" id="circle-2">
+                <h2 class="title">时长</h2>
+                <div class="chart-svg align-center">
+                    <h2 class="circle-percentage"></h2>
+                    <svg class="chart-circle" id="chart-4" width="50%" viewBox="0 0 100 100">
+                        <path class="underlay" d="M5,50 A45,45,0 1 1 95,50 A45,45,0 1 1 5,50" />
+                    </svg>
+                </div>
+                <div class="triangle red"></div>
+            </div>
+        </div>
+
+        <div style="text-align:center;clear:both;">
+            <script src="/gg_bd_ad_720x90-2.js" type="text/javascript"></script>
+            <script src="/follow.js" type="text/javascript"></script>
+        </div>
+
+    </div>
+    <script src='js/jquery.js'></script>
+    <script src='js/snap.svg-min.js'></script>
+
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
